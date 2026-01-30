@@ -5,15 +5,15 @@ class TableCli < Formula
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/sergkh/table-cli/releases/download/v0.0.14/osx_x86_64.tar.gz"
-      sha256 "b7359e45b2988b2cc93a3589a56d962d60d4ad2c80f863fc5fd58eaaa47ba512"
+      url "https://github.com/sergkh/table-cli/releases/download/v0.2.2/osx_x86_64.tar.gz"
+      sha256 "e6b5d69b14fed979c7dadb089fdc22b234690d6d6adf6453dea6c0f81e7acfcd"
     elsif Hardware::CPU.arm?
-      url "https://github.com/sergkh/table-cli/releases/download/v0.0.14/osx_arm64.tar.gz"
-      sha256 "a890e21d239081f45db4cde973e42809549b419e32b958cc80b5b8e11292d234"
+      url "https://github.com/sergkh/table-cli/releases/download/v0.2.2/osx_arm64.tar.gz"
+      sha256 "7348e37e5b2a21ff39d59179025d04dc2010fab7dc86971a272a4e46b9ab4139"
     end
   elsif OS.linux?
-    url "https://github.com/sergkh/table-cli/releases/download/v0.0.14/linux.tar.gz"
-    sha256 "cb23e440d27230a84c59c8626c097ad92df6265fdbc25133c138681a4a9d98d8"
+    url "https://github.com/sergkh/table-cli/releases/download/v0.2.2/linux.tar.gz"
+    sha256 "0c332070b19776591cfcaf18737f8e8d2b46c0790d296dafede1d1571830288b"
   end
   def install
     bin.install "table"
